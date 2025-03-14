@@ -57,7 +57,7 @@ body {
 }
 
 .hero {
-    background: url(/img/pexel.jpg) no-repeat center center/cover;
+    background: url(img/pexel.jpg) no-repeat center center/cover;
     background-blend-mode: multiply;
     background-color: rgb(132, 124, 124);
     height: 50vh;
