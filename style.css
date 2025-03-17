@@ -416,23 +416,36 @@ h2 {
         padding: 1rem;
     }
 
+    .Moses{
+        padding-right: 20px;
+        height: 18%;
+    }
     .Aaron {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        gap: 1rem;
+        padding-inline: 20px;
+        flex-wrap: wrap;
+        /* padding-right: 20px; */
     }
 
     .Aaron li {
-        display: block;
+        /* display: block; */
         padding: 0.5rem 0;
+        width: 20%;
+        /* padding-right: 5px; */
     }
 
     .Aaron li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     body {
         padding-top: 60px;
+    }
+
+    .logo {
+        width: auto;
+        fl
     }
 }
 
@@ -453,4 +466,10 @@ h2 {
     .Matthew {
         padding: 1.5rem 0;
     }
+
+    .logo {
+        width: 100%;
+    }
+
+
 }
