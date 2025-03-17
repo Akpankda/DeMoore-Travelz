@@ -187,3 +187,29 @@ body {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Moses{
+        padding-right: 20px;
+        height: 18%;
+    }
+    .Aaron {
+        flex-direction: row;
+        text-align: center;
+        padding-inline: 20px;
+        flex-wrap: wrap;
+        /* padding-right: 20px; */
+    }
+
+    .Aaron li {
+        /* display: block; */
+        padding: 0.5rem 0;
+        width: 20%;
+        /* padding-right: 5px; */
+    }
+
+    .Aaron li a {
+        font-size: 1rem;
+
+}
+}
