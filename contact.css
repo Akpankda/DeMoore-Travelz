@@ -9,7 +9,7 @@ body {
 }
 
 .Moses {
-    background-color: skyblue;
+    background-color: rgb(80, 158, 186);
     position: fixed;
     width: 100%;
     top: 0;
@@ -50,7 +50,6 @@ body {
 }
 .Aaron li a:hover {
     color: goldenrod;
-}
 
 body {
     padding-top: 80px;
@@ -126,13 +125,14 @@ section {
 }
 
 .contact-form button {
-    background: skyblue;
+    background: rgb(80, 158, 186);
     color: white;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s;
+
 }
 
 .contact-form button:hover {
@@ -140,7 +140,7 @@ section {
 }
 
 .Matthew {
-    background-color: darkslategray;
+    background-color: rgb(80, 158, 186);
     color: white;
     text-align: center;
     padding: 40px 20px;

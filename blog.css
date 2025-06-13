@@ -9,7 +9,7 @@ body {
 }
 
 .Moses {
-    background-color: skyblue;
+    background-color: rgb(80, 158, 186);
     position: fixed;
     width: 100%;
     top: 0;
@@ -112,7 +112,7 @@ body {
 
 .container-box h3 {
     margin-top: 15px;
-    color: skyblue;
+    color: rgb(80, 158, 186);
 }
 
 .container-box .btn {
@@ -131,7 +131,7 @@ body {
 }
 
 .Matthew {
-    background-color: darkslategray;
+    background-color: rgb(80, 158, 186);
     color: white;
     text-align: center;
     padding: 40px 20px;
