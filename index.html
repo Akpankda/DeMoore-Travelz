@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,22 +43,23 @@
 
 
   <!-- Hero Section -->
-  <header class="David">
+  <header class="David" data-aos="fade-up">
     <div class="Solomon">
       <video autoplay loop muted playsinline>
         <source src="img/4174115-hd_1920_1080_30fps.mp4" type="video/mp4" />
       </video>
       <div class="Samuel">
-        <h1>Explore the World with DeMoore Travelz</h1>
-        <p>Discover amazing destinations and unforgettable experiences.</p>
-        <a href="tours.html" class="Noah">Discover Tours</a>
-      </div>
+  <h1><span id="typed-text" class="hope"></span></h1>
+  <p>Discover amazing destinations and unforgettable experiences.</p>
+  <a href="tours.html" class="Noah">Discover Tours</a>
+</div>
+
     </div>
   </header>
 
   <!-- Popular Destinations -->
   <section class="Isaiah">
-    <div class="centered-text">
+    <div class="centered-text" data-aos="fade-up">
   <h2>Popular Destinations</h2>
 </div>
     <div class="Elijah">
@@ -70,7 +76,7 @@
   </section>
 
   <!-- Techie Travel & Tour -->
-  <section class="tech-travel">
+  <section class="tech-travel" data-aos="fade-up">
     <div class="centered-text">
   <h2>Techie Travel & Tour</h2>
   <p>Top tech destinations from Silicon Valley to Tokyo and Shenzhen.</p>
@@ -89,7 +95,7 @@
   </section>
 
   <!-- Travel Tips -->
-  <section class="travel-tips">
+  <section class="travel-tips" data-aos="fade-up">
     <h2>Top Travel Tips</h2>
     <ul>
       <li>Pack light but smart – always bring essentials like chargers and meds.</li>
@@ -100,7 +106,7 @@
   </section>
 
   <!-- Blog Preview -->
-  <section class="blog-preview">
+  <section class="blog-preview" data-aos="fade-up">
     <div class="centered-text">
   <h2>From Our Blog</h2>
 </div>
@@ -127,7 +133,7 @@
   </section>
 
   <!-- Exclusive Deals -->
-  <section class="exclusive-deals">
+  <section class="exclusive-deals" data-aos="fade-up">
     <div class="centered-text">
   <h2>Exclusive Travel Deals</h2>
 </div>
@@ -139,7 +145,7 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <section class="testimonials" data-aos="fade-up">
     <div class="centered-text">
   <h2>What Our Travelers Say</h2>
 </div>
@@ -151,7 +157,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="faqs">
+  <section class="faqs" data-aos="fade-up">
     <h2>Frequently Asked Questions</h2>
     <div class="faq">
       <h4>What is included in the travel packages?</h4>
@@ -164,7 +170,7 @@
   </section>
 
   <!-- Partner Highlights -->
-  <section class="partners">
+  <section class="partners" data-aos="fade-up">
     <div class="centered-text">
   <h2>Our Trusted Partners</h2>
 </div>
@@ -180,7 +186,7 @@
   </section>
 
   <!-- Why Choose Us - moved to bottom -->
-  <section class="Daniel">
+  <section class="Daniel" data-aos="fade-up">
     <div class="centered-text">
   <h2>Why Choose DeMoore Travelz?</h2>
 </div>
@@ -192,19 +198,19 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="newsletter">
+  <section class="newsletter" data-aos="fade-up">
     <div class="centered-text">
   <h2>Subscribe to Our Newsletter</h2>
   <p>Get the latest travel deals and inspiration directly in your inbox  </p>
 </div>
-    <form>
-      <input type="email" placeholder="Enter your email" required/>
-      <button type="submit">Subscribe</button>
-    </form>
+    <form id="newsletter-form">
+  <input type="email" placeholder="Enter your email" required />
+  <button type="submit">Subscribe</button>
+</form>
   </section>
 
   <!-- Footer -->
-  <footer class="Matthew">
+  <footer class="Matthew" data-aos="fade-up">
     <div class="footer-container">
       <div class="footer-about">
         <h3>About DeMoore Travelz</h3>
@@ -248,6 +254,117 @@
     </div>
     <p class="footer-bottom">&copy; 2025 DeMoore Travelz | All Rights Reserved</p>
   </footer>
+
+  <script>
+document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent real form submission (you can remove this when connecting to a backend)
+
+  const emailInput = this.querySelector("input[type='email']");
+  const email = emailInput.value;
+
+  // Basic email validation (optional)
+  if (!email.includes("@") || !email.includes(".")) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // Success message
+  alert("Thank you for subscribing!");
+  emailInput.value = ""; // Clear the input
+});
+
+  // Initialize AOS
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true,     // Whether animation should happen only once
+  });
+
+  // ScrollReveal Animations
+  ScrollReveal().reveal('.Joshua', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    interval: 100,
+  });
+
+  ScrollReveal().reveal('.tech-spot', {
+    origin: 'left',
+    distance: '60px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    interval: 120,
+  });
+
+  ScrollReveal().reveal('.blog-post', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 1000,
+    delay: 300,
+    interval: 100,
+  });
+
+  ScrollReveal().reveal('.deal-card', {
+    origin: 'right',
+    distance: '50px',
+    duration: 1000,
+    interval: 100,
+  });
+
+  ScrollReveal().reveal('.testimonial', {
+    origin: 'top',
+    distance: '30px',
+    duration: 800,
+    interval: 200,
+  });
+
+  ScrollReveal().reveal('.faq h4, .faq p', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1000,
+    interval: 150,
+  });
+
+  ScrollReveal().reveal('.partner-logos img', {
+    scale: 0.85,
+    duration: 1000,
+    interval: 150,
+  });
+
+  ScrollReveal().reveal('.newsletter', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 1000
+  });
+
+  ScrollReveal().reveal('.footer-container', {
+    origin: 'top',
+    distance: '50px',
+    duration: 1000,
+    delay: 200
+  });
+
+
+  
+  const text = "Explore the World with DeMoore Travelz";
+  const typedText = document.getElementById("typed-text");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      typedText.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100); // typing speed (in milliseconds)
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", typeEffect);
+
+
+</script>
+
+
+
 
   <script src="script.js"></script>
 </body>

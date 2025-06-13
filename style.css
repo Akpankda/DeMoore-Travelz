@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -109,10 +110,32 @@ img:hover {
   overflow: hidden;
 }
 
+.David .Solomon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.413), rgba(0, 0, 0, 0.436)), url('img/your-fallback.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  z-index: 1;
+  pointer-events: none;
+
+}
+
+/* Make sure video and content stay on top */
 .David video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .Samuel {
@@ -122,8 +145,15 @@ img:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  animation: fadeIn 2s ease-out;
+  /* animation: fadeIn 2s ease-out; */
+  z-index: 2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 45px;
 }
+
+ntent
+
 
 .Samuel h1 {
   font-size: 3rem;
@@ -144,6 +174,8 @@ img:hover {
   font-weight: bold;
   transition: background 0.3s ease, transform 0.3s ease;
   text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -548,5 +580,20 @@ height: 50%;
   }
 }
 
+#typed-text::after {
+  content: '';
+  animation: blink 0.7s infinite;
+}
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+.hope{
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+}
 
